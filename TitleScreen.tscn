@@ -1,0 +1,149 @@
+[gd_scene load_steps=12 format=3 uid="uid://7lmdsg8cf2d1"]
+
+[ext_resource type="Script" uid="uid://ckoi5gbwaowv7" path="res://scripts/title_screen.gd" id="1_1xr1c"]
+[ext_resource type="FontFile" uid="uid://coouv157ntw6k" path="res://assets/FONT/Oswald-SemiBold.ttf" id="1_fnlyl"]
+[ext_resource type="Texture2D" uid="uid://c474jqx8lis63" path="res://assets/Rooms/garage_1.png" id="2_pkhjh"]
+
+[sub_resource type="Gradient" id="Gradient_kc5n2"]
+offsets = PackedFloat32Array(0, 0.4489796, 1)
+colors = PackedColorArray(3.0310523e-06, 0.9752752, 0.573129, 1, 0.30262834, 0.65751445, 0.5797984, 1, 0.016932715, 0.111548916, 0.38694713, 1)
+metadata/_snap_enabled = true
+metadata/_snap_count = 49
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_kc5n2"]
+gradient = SubResource("Gradient_kc5n2")
+fill = 1
+fill_from = Vector2(0.51760566, 0.49823943)
+metadata/_snap_count = 58
+
+[sub_resource type="LabelSettings" id="LabelSettings_pkhjh"]
+line_spacing = -9.52
+font = ExtResource("1_fnlyl")
+font_size = 39
+outline_size = 1
+shadow_size = 0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fnlyl"]
+bg_color = Color(1.1561769, 1.1561769, 1.1561769, 0.13333334)
+
+[sub_resource type="Gradient" id="Gradient_fnlyl"]
+colors = PackedColorArray(0.98039216, 0.7921569, 0, 1, 1, 0.30588236, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_pkhjh"]
+gradient = SubResource("Gradient_fnlyl")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1xr1c"]
+texture = SubResource("GradientTexture1D_pkhjh")
+
+[sub_resource type="LabelSettings" id="LabelSettings_fnlyl"]
+font = ExtResource("1_fnlyl")
+font_size = 17
+font_color = Color(1, 0.34509805, 0.4509804, 1)
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_1xr1c")
+
+[node name="background" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_kc5n2")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.105
+anchor_right = 0.339
+anchor_bottom = 0.887
+theme_override_constants/separation = 11
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "RANDOM MOTORCYCLE
+BRAND MANAGER :]"
+label_settings = SubResource("LabelSettings_pkhjh")
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+focus_mode = 0
+theme_override_fonts/font = ExtResource("1_fnlyl")
+theme_override_font_sizes/font_size = 31
+theme_override_styles/normal = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/hover = SubResource("StyleBoxTexture_1xr1c")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_1xr1c")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_1xr1c")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_1xr1c")
+disabled = true
+text = "NEW GAME"
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+focus_mode = 0
+theme_override_fonts/font = ExtResource("1_fnlyl")
+theme_override_font_sizes/font_size = 31
+theme_override_styles/normal = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/hover = SubResource("StyleBoxTexture_1xr1c")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_1xr1c")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_1xr1c")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_1xr1c")
+disabled = true
+text = "CONTINUE"
+
+[node name="Button3" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+focus_mode = 0
+theme_override_fonts/font = ExtResource("1_fnlyl")
+theme_override_font_sizes/font_size = 31
+theme_override_styles/normal = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/hover = SubResource("StyleBoxTexture_1xr1c")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_1xr1c")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_1xr1c")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_1xr1c")
+disabled = true
+text = "SETTINGS"
+
+[node name="Button4" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+focus_mode = 0
+theme_override_fonts/font = ExtResource("1_fnlyl")
+theme_override_font_sizes/font_size = 31
+theme_override_styles/normal = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/hover = SubResource("StyleBoxTexture_1xr1c")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_1xr1c")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_1xr1c")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_1xr1c")
+text = "GITHUB"
+
+[node name="Version" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Build_1.0.0"
+label_settings = SubResource("LabelSettings_fnlyl")
+
+[node name="PREVIEW_GARAGE" type="TextureRect" parent="."]
+anchors_preset = -1
+anchor_left = 0.474
+anchor_top = 0.132
+anchor_right = 0.931
+anchor_bottom = 0.913
+texture = ExtResource("2_pkhjh")
+expand_mode = 1
+
+[connection signal="pressed" from="VBoxContainer/Button4" to="." method="_on_button_4_pressed"]

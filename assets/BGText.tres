@@ -1,0 +1,13 @@
+[gd_resource type="GradientTexture2D" load_steps=2 format=3 uid="uid://ct4idplogtxeb"]
+
+[sub_resource type="Gradient" id="Gradient_kc5n2"]
+offsets = PackedFloat32Array(0, 0.4489796, 1)
+colors = PackedColorArray(3.0310523e-06, 0.9752752, 0.573129, 1, 0.30262834, 0.65751445, 0.5797984, 1, 0.016932715, 0.111548916, 0.38694713, 1)
+metadata/_snap_enabled = true
+metadata/_snap_count = 49
+
+[resource]
+gradient = SubResource("Gradient_kc5n2")
+fill = 1
+fill_from = Vector2(0.51760566, 0.49823943)
+metadata/_snap_count = 58

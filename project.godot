@@ -12,14 +12,29 @@ config_version=5
 
 config/name="RMBM"
 run/main_scene="uid://7lmdsg8cf2d1"
-config/features=PackedStringArray("4.5", "Mobile")
+config/features=PackedStringArray("4.6", "Mobile")
+
+[autoload]
+
+MusicManager="*res://audio/scripts/music_manager.gd"
+SettingsManager="*res://scripts/SettingsManager.gd"
+SFXManager="*res://scripts/SFXManager.gd"
 
 [display]
 
+window/size/viewport_width=1280
+window/size/viewport_height=720
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+
+[global_group]
+
+buttons=""
 
 [rendering]
 
 renderer/rendering_method="mobile"
 textures/vram_compression/import_s3tc_bptc=true
+textures/vram_compression/import_etc2_astc=true
+anti_aliasing/quality/msaa_2d=1
+2d/snap/snap_2d_transforms_to_pixel=true

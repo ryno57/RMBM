@@ -1,0 +1,208 @@
+[gd_scene load_steps=11 format=3 uid="uid://7lmdsg8cf2d1"]
+
+[ext_resource type="Script" uid="uid://ckoi5gbwaowv7" path="res://scripts/title_screen.gd" id="1_emot1"]
+[ext_resource type="Texture2D" uid="uid://ct4idplogtxeb" path="res://assets/tres/BGText.tres" id="2_i5sur"]
+[ext_resource type="Texture2D" uid="uid://qhpsk74tkhvx" path="res://assets/image/202914.png" id="3_7whhf"]
+[ext_resource type="Texture2D" uid="uid://d2tv2a0fab41o" path="res://assets/image/202035.png" id="4_5c2t2"]
+[ext_resource type="FontFile" uid="uid://uemrovsegmsm" path="res://assets/FONT/Barlow-Regular.ttf" id="5_bawyk"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_pkhjh"]
+line_spacing = -9.52
+font = ExtResource("5_bawyk")
+font_size = 39
+outline_size = 1
+shadow_size = 0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fnlyl"]
+bg_color = Color(1.1561769, 1.1561769, 1.1561769, 0.13333334)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tu0on"]
+bg_color = Color(1.156, 1.156, 1.156, 0.282)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2k3je"]
+bg_color = Color(0.15686275, 0.15686275, 0.15686275, 0.7647059)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_fnlyl"]
+font = ExtResource("5_bawyk")
+font_size = 17
+font_color = Color(1, 0.34509805, 0.4509804, 1)
+shadow_size = 0
+
+[node name="Control" type="Control" unique_id=1118311297]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_emot1")
+
+[node name="background" type="TextureRect" parent="." unique_id=1149912720]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_i5sur")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1198783672]
+modulate = Color(1, 1, 1, 0.6745098)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.3
+anchor_right = 0.917
+anchor_bottom = 1.0
+offset_left = -43.0
+offset_right = 58.0
+texture = ExtResource("3_7whhf")
+expand_mode = 1
+stretch_mode = 5
+flip_h = true
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=266993900]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.475
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 58.0
+offset_right = 58.0
+texture = ExtResource("4_5c2t2")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=91296457]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.105
+anchor_right = 0.41
+anchor_bottom = 0.887
+theme_override_constants/separation = 11
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1893324453]
+layout_mode = 2
+text = "RANDOM MOTORCYCLE
+BRAND MANAGER :]"
+label_settings = SubResource("LabelSettings_pkhjh")
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=1968444584 groups=["buttons"]]
+layout_mode = 2
+size_flags_vertical = 3
+focus_mode = 0
+theme_override_fonts/font = ExtResource("5_bawyk")
+theme_override_font_sizes/font_size = 31
+theme_override_styles/normal = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tu0on")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_tu0on")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_tu0on")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_tu0on")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_2k3je")
+disabled = true
+text = "NEW GAME"
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=872699388 groups=["buttons"]]
+layout_mode = 2
+size_flags_vertical = 3
+focus_mode = 0
+theme_override_fonts/font = ExtResource("5_bawyk")
+theme_override_font_sizes/font_size = 31
+theme_override_styles/normal = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tu0on")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_tu0on")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_tu0on")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_tu0on")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_2k3je")
+disabled = true
+text = "CONTINUE"
+
+[node name="Button3" type="Button" parent="VBoxContainer" unique_id=1316568681 groups=["buttons"]]
+layout_mode = 2
+size_flags_vertical = 3
+focus_mode = 0
+theme_override_fonts/font = ExtResource("5_bawyk")
+theme_override_font_sizes/font_size = 31
+theme_override_styles/normal = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tu0on")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_tu0on")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_tu0on")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_tu0on")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_2k3je")
+text = "SETTINGS"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=379933121]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 10
+
+[node name="Button4" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=1074685258 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.12
+focus_mode = 0
+theme_override_fonts/font = ExtResource("5_bawyk")
+theme_override_font_sizes/font_size = 31
+theme_override_styles/normal = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tu0on")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_tu0on")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_tu0on")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_tu0on")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_2k3je")
+text = "OFFICIAL SOURCE"
+
+[node name="Button5" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=844054097 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_mode = 0
+theme_override_fonts/font = ExtResource("5_bawyk")
+theme_override_font_sizes/font_size = 31
+theme_override_styles/normal = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tu0on")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_tu0on")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_tu0on")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_tu0on")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_2k3je")
+text = "QUIT"
+
+[node name="Version" type="Label" parent="VBoxContainer" unique_id=410787511]
+layout_mode = 2
+text = "Build 2.3.0"
+label_settings = SubResource("LabelSettings_fnlyl")
+
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Button5" to="." method="_on_button_5_pressed"]

@@ -1,8 +1,8 @@
 [gd_resource type="GradientTexture2D" load_steps=2 format=3 uid="uid://ct4idplogtxeb"]
 
 [sub_resource type="Gradient" id="Gradient_kc5n2"]
-offsets = PackedFloat32Array(0, 0.4489796, 1)
-colors = PackedColorArray(3.0310523e-06, 0.9752752, 0.573129, 1, 0.30262834, 0.65751445, 0.5797984, 1, 0.016932715, 0.111548916, 0.38694713, 1)
+offsets = PackedFloat32Array(0, 0.20408164, 0.59183675, 1)
+colors = PackedColorArray(0.10130448, 0.8406172, 0.6068142, 1, 0.30262834, 0.65751445, 0.5797984, 1, 0.20007095, 0.4615268, 0.51056975, 1, 0.016932715, 0.111548916, 0.38694713, 1)
 metadata/_snap_enabled = true
 metadata/_snap_count = 49
 

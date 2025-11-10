@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://cxmbiupcfwqvw"
-path="res://.godot/imported/Nunito-SemiBold.ttf-2e2a00dda0e96c02004c34d127b1c388.fontdata"
+uid="uid://uemrovsegmsm"
+path="res://.godot/imported/Barlow-Regular.ttf-dffce3f0ebcc5f04b2841abc6f8aab25.fontdata"
 
 [deps]
 
-source_file="res://assets/FONT/Nunito/static/Nunito-SemiBold.ttf"
-dest_files=["res://.godot/imported/Nunito-SemiBold.ttf-2e2a00dda0e96c02004c34d127b1c388.fontdata"]
+source_file="res://assets/FONT/Barlow-Regular.ttf"
+dest_files=["res://.godot/imported/Barlow-Regular.ttf-dffce3f0ebcc5f04b2841abc6f8aab25.fontdata"]
 
 [params]
 

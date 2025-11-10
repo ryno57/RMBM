@@ -11,8 +11,12 @@ config_version=5
 [application]
 
 config/name="RMBM"
-run/main_scene="uid://7lmdsg8cf2d1"
+run/main_scene="uid://f4xq0p5664q3"
 config/features=PackedStringArray("4.6", "Mobile")
+
+[audio]
+
+buses/default_bus_layout="res://assets/tres/default_bus_layout.tres"
 
 [autoload]
 

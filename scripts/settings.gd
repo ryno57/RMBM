@@ -66,7 +66,7 @@ func _on_check_box_2_toggled(button_pressed: bool) -> void:
 
 
 func _on_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://TitleScreen.tscn")
+	get_tree().change_scene_to_file("res://Scenes/TitleScreen.tscn")
 
 
 func _save_settings() -> void:

@@ -128,9 +128,25 @@ theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_1xr1c")
 theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_1xr1c")
 text = "OFFICIAL SOURCE"
 
+[node name="Button5" type="Button" parent="VBoxContainer" unique_id=844054097 groups=["buttons"]]
+layout_mode = 2
+size_flags_vertical = 3
+focus_mode = 0
+theme_override_fonts/font = ExtResource("1_fnlyl")
+theme_override_font_sizes/font_size = 31
+theme_override_styles/normal = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_fnlyl")
+theme_override_styles/hover = SubResource("StyleBoxTexture_1xr1c")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_1xr1c")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_1xr1c")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_1xr1c")
+text = "LEAVE"
+
 [node name="Version" type="Label" parent="VBoxContainer" unique_id=410787511]
 layout_mode = 2
-text = "Build_2.1.0"
+text = "Build_2.2.0"
 label_settings = SubResource("LabelSettings_fnlyl")
 
 [node name="PREVIEW_GARAGE" type="TextureRect" parent="." unique_id=134866119]
@@ -149,3 +165,4 @@ expand_mode = 1
 
 [connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_button_3_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button5" to="." method="_on_button_5_pressed"]

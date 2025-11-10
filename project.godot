@@ -18,7 +18,7 @@ config/features=PackedStringArray("4.6", "Mobile")
 
 MusicManager="*res://audio/scripts/music_manager.gd"
 SettingsManager="*res://scripts/SettingsManager.gd"
-SFXManager="*res://scripts/SFXManager.gd"
+SFXManager="*res://audio/scripts/SFXManager.gd"
 
 [display]
 

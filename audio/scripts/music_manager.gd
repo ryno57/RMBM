@@ -10,6 +10,7 @@ var playlist: Array = [
 ]
 
 func _ready() -> void:
+	bus = "Music"
 	randomize()
 	_play_random_track()
 

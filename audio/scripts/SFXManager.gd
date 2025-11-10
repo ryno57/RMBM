@@ -1,9 +1,10 @@
 extends Node
 
 @onready var player := AudioStreamPlayer.new()
-var click_sound: AudioStream = preload("res://audio/sfx/pop_sfx.mp3")
+var click_sound: AudioStream = preload("res://audio/sfx/bong_001.wav")
 
 func _ready() -> void:
+	player.bus = "SFX"
 	add_child(player)
 	await get_tree().process_frame
 	_connect_existing_buttons()

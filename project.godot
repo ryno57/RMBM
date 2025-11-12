@@ -20,8 +20,9 @@ buses/default_bus_layout="res://assets/tres/default_bus_layout.tres"
 
 [autoload]
 
-MusicManager="*res://audio/scripts/music_manager.gd"
+ColorBlindFilter="*res://Scenes/ColorBlindOverlay.tscn"
 SettingsManager="*res://scripts/SettingsManager.gd"
+MusicManager="*res://audio/scripts/music_manager.gd"
 SFXManager="*res://audio/scripts/SFXManager.gd"
 
 [display]

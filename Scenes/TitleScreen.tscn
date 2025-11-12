@@ -118,7 +118,6 @@ theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_tu0on")
 theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_tu0on")
 theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_tu0on")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_2k3je")
-disabled = true
 text = "NEW GAME"
 
 [node name="Button2" type="Button" parent="VBoxContainer" unique_id=872699388 groups=["buttons"]]
@@ -200,9 +199,10 @@ text = "QUIT"
 
 [node name="Version" type="Label" parent="VBoxContainer" unique_id=410787511]
 layout_mode = 2
-text = "Build 2.3.0"
+text = "Build 3.0.0"
 label_settings = SubResource("LabelSettings_fnlyl")
 
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_button_3_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/Button4" to="." method="_on_button_4_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/Button5" to="." method="_on_button_5_pressed"]

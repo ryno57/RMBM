@@ -10,6 +10,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 stream = ExtResource("1_b04ml")
+speed_scale = 1.705
 autoplay = true
 expand = true
 script = ExtResource("2_50j67")

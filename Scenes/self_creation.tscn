@@ -3,12 +3,12 @@
 [ext_resource type="Script" uid="uid://bnddl3yy5sxf4" path="res://Scenes/self_creation.gd" id="1_0ifxk"]
 [ext_resource type="FontFile" uid="uid://uemrovsegmsm" path="res://assets/FONT/Barlow-Regular.ttf" id="2_vu0e7"]
 
-[sub_resource type="Gradient" id="Gradient_f4ehq"]
+[sub_resource type="Gradient" id="Gradient_vu0e7"]
 offsets = PackedFloat32Array(0, 0.32599118, 0.5418502, 0.6740088, 1)
 colors = PackedColorArray(0.78039217, 0.1764706, 0.77254903, 1, 0.4889868, 0.21860586, 0.57082146, 1, 0.3387752, 0.15145244, 0.54725885, 1, 0.2117345, 0.09465778, 0.5273309, 1, 0, 0.035071652, 0.31928614, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_0ifxk"]
-gradient = SubResource("Gradient_f4ehq")
+gradient = SubResource("Gradient_vu0e7")
 fill = 1
 fill_from = Vector2(0.5, 0.5)
 
@@ -741,7 +741,6 @@ theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_8ngqo")
 theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_6aj7l")
 theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_wul0g")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_hij14")
-disabled = true
 text = "Finish"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=2093053440]
@@ -822,26 +821,29 @@ anchor_top = 0.4
 anchor_right = 0.95
 anchor_bottom = 0.495
 
-[node name="easy" type="CheckBox" parent="HBoxContainer/Game_Panel/VBoxContainer/holder2/HBoxContainer" unique_id=1741616060]
+[node name="easy" type="CheckBox" parent="HBoxContainer/Game_Panel/VBoxContainer/holder2/HBoxContainer" unique_id=1741616060 groups=["buttons"]]
 layout_mode = 2
 size_flags_horizontal = 2
+focus_mode = 0
 theme_override_fonts/font = ExtResource("2_vu0e7")
 theme_override_font_sizes/font_size = 18
 disabled = true
 button_group = SubResource("ButtonGroup_vu0e7")
 text = "Easy"
 
-[node name="normal" type="CheckBox" parent="HBoxContainer/Game_Panel/VBoxContainer/holder2/HBoxContainer" unique_id=123303967]
+[node name="normal" type="CheckBox" parent="HBoxContainer/Game_Panel/VBoxContainer/holder2/HBoxContainer" unique_id=123303967 groups=["buttons"]]
 layout_mode = 2
 size_flags_horizontal = 2
+focus_mode = 0
 theme_override_fonts/font = ExtResource("2_vu0e7")
 theme_override_font_sizes/font_size = 18
 button_group = SubResource("ButtonGroup_vu0e7")
 text = "Normal"
 
-[node name="hard" type="CheckBox" parent="HBoxContainer/Game_Panel/VBoxContainer/holder2/HBoxContainer" unique_id=1246931245]
+[node name="hard" type="CheckBox" parent="HBoxContainer/Game_Panel/VBoxContainer/holder2/HBoxContainer" unique_id=1246931245 groups=["buttons"]]
 layout_mode = 2
 size_flags_horizontal = 2
+focus_mode = 0
 theme_override_fonts/font = ExtResource("2_vu0e7")
 theme_override_font_sizes/font_size = 18
 disabled = true
@@ -863,26 +865,29 @@ anchor_top = 0.4
 anchor_right = 0.95
 anchor_bottom = 0.495
 
-[node name="0_75x" type="CheckBox" parent="HBoxContainer/Game_Panel/VBoxContainer/holder3/HBoxContainer" unique_id=328337188]
+[node name="0_75x" type="CheckBox" parent="HBoxContainer/Game_Panel/VBoxContainer/holder3/HBoxContainer" unique_id=328337188 groups=["buttons"]]
 layout_mode = 2
 size_flags_horizontal = 2
+focus_mode = 0
 theme_override_fonts/font = ExtResource("2_vu0e7")
 theme_override_font_sizes/font_size = 18
 disabled = true
 button_group = SubResource("ButtonGroup_0cfep")
 text = "x0.75"
 
-[node name="1x" type="CheckBox" parent="HBoxContainer/Game_Panel/VBoxContainer/holder3/HBoxContainer" unique_id=205876413]
+[node name="1x" type="CheckBox" parent="HBoxContainer/Game_Panel/VBoxContainer/holder3/HBoxContainer" unique_id=205876413 groups=["buttons"]]
 layout_mode = 2
 size_flags_horizontal = 2
+focus_mode = 0
 theme_override_fonts/font = ExtResource("2_vu0e7")
 theme_override_font_sizes/font_size = 18
 button_group = SubResource("ButtonGroup_0cfep")
 text = "x1"
 
-[node name="1_5x" type="CheckBox" parent="HBoxContainer/Game_Panel/VBoxContainer/holder3/HBoxContainer" unique_id=686856427]
+[node name="1_5x" type="CheckBox" parent="HBoxContainer/Game_Panel/VBoxContainer/holder3/HBoxContainer" unique_id=686856427 groups=["buttons"]]
 layout_mode = 2
 size_flags_horizontal = 2
+focus_mode = 0
 theme_override_fonts/font = ExtResource("2_vu0e7")
 theme_override_font_sizes/font_size = 18
 disabled = true
@@ -980,26 +985,29 @@ anchor_top = 0.4
 anchor_right = 0.95
 anchor_bottom = 0.495
 
-[node name="1900" type="CheckBox" parent="HBoxContainer/Self_Panel/VBoxContainer/holder3/HBoxContainer" unique_id=1988475709]
+[node name="1900" type="CheckBox" parent="HBoxContainer/Self_Panel/VBoxContainer/holder3/HBoxContainer" unique_id=1988475709 groups=["buttons"]]
 layout_mode = 2
 size_flags_horizontal = 2
+focus_mode = 0
 theme_override_fonts/font = ExtResource("2_vu0e7")
 theme_override_font_sizes/font_size = 18
 button_group = SubResource("ButtonGroup_yo10m")
 text = "1900"
 
-[node name="1950" type="CheckBox" parent="HBoxContainer/Self_Panel/VBoxContainer/holder3/HBoxContainer" unique_id=633802317]
+[node name="1950" type="CheckBox" parent="HBoxContainer/Self_Panel/VBoxContainer/holder3/HBoxContainer" unique_id=633802317 groups=["buttons"]]
 layout_mode = 2
 size_flags_horizontal = 2
+focus_mode = 0
 theme_override_fonts/font = ExtResource("2_vu0e7")
 theme_override_font_sizes/font_size = 18
 disabled = true
 button_group = SubResource("ButtonGroup_yo10m")
 text = "1950"
 
-[node name="2000" type="CheckBox" parent="HBoxContainer/Self_Panel/VBoxContainer/holder3/HBoxContainer" unique_id=1844922122]
+[node name="2000" type="CheckBox" parent="HBoxContainer/Self_Panel/VBoxContainer/holder3/HBoxContainer" unique_id=1844922122 groups=["buttons"]]
 layout_mode = 2
 size_flags_horizontal = 2
+focus_mode = 0
 theme_override_fonts/font = ExtResource("2_vu0e7")
 theme_override_font_sizes/font_size = 18
 disabled = true
@@ -1007,3 +1015,4 @@ button_group = SubResource("ButtonGroup_yo10m")
 text = "2000"
 
 [connection signal="pressed" from="Back2" to="." method="_on_back_2_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

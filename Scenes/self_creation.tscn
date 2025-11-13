@@ -686,10 +686,8 @@ expand_margin_right = 15.0
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vu0e7"]
 
 [sub_resource type="ButtonGroup" id="ButtonGroup_vu0e7"]
-allow_unpress = true
 
 [sub_resource type="ButtonGroup" id="ButtonGroup_0cfep"]
-allow_unpress = true
 
 [sub_resource type="ButtonGroup" id="ButtonGroup_yo10m"]
 

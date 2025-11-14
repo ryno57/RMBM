@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://ndb47jvthh4y"]
+
+[ext_resource type="StyleBox" uid="uid://dmvxmra0u887y" path="res://Scenes/gui_menu/bg.tres" id="1_5nyep"]
+
+[node name="Marketing" type="Control" unique_id=574458049]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="." unique_id=1761656094]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("1_5nyep")
+
+[node name="Label" type="Label" parent="." unique_id=1412332298]
+layout_mode = 0
+offset_right = 74.0
+offset_bottom = 23.0
+text = "Marketing"

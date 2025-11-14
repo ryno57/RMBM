@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2j5y5x0qyax6"]
+
+[ext_resource type="StyleBox" uid="uid://dmvxmra0u887y" path="res://Scenes/gui_menu/bg.tres" id="1_4fmjc"]
+
+[node name="Buildings" type="Control" unique_id=1332090533]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="." unique_id=1380060767]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("1_4fmjc")
+
+[node name="Label" type="Label" parent="." unique_id=87910829]
+layout_mode = 0
+offset_right = 74.0
+offset_bottom = 23.0
+text = "buildings"

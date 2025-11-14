@@ -73,7 +73,6 @@ corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
 [sub_resource type="ButtonGroup" id="ButtonGroup_rxg2q"]
-allow_unpress = true
 
 [node name="Control" type="Control" unique_id=682062872]
 layout_mode = 3
@@ -104,10 +103,21 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 24
 
-[node name="panel" type="Panel" parent="VBoxContainer" unique_id=637649953]
+[node name="panel_content" type="Panel" parent="VBoxContainer" unique_id=637649953]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_trn2v")
+
+[node name="Control_content" type="Control" parent="VBoxContainer/panel_content" unique_id=1626691872]
+layout_mode = 1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="ToolsBarBG" type="Panel" parent="VBoxContainer" unique_id=897301384]
 layout_mode = 2
@@ -230,7 +240,8 @@ focus_mode = 0
 theme_override_icons/radio_checked = ExtResource("10_5vvyt")
 theme_override_icons/radio_unchecked = ExtResource("11_c6i3y")
 theme_override_icons/radio_unchecked_disabled = ExtResource("5_5vvyt")
+button_pressed = true
 button_group = SubResource("ButtonGroup_rxg2q")
 icon_alignment = 1
 
-[connection signal="pressed" from="VBoxContainer/ToolsBarBG/HBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ToolsBarBG/HBoxContainer/Button" to="." method="_on_exit_button_pressed"]

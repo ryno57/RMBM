@@ -199,7 +199,7 @@ text = "QUIT"
 
 [node name="Version" type="Label" parent="VBoxContainer" unique_id=410787511]
 layout_mode = 2
-text = "Build 3.0.0"
+text = "Build 3.1.2 Redo"
 label_settings = SubResource("LabelSettings_fnlyl")
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]

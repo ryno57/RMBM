@@ -1,6 +1,6 @@
 [gd_scene load_steps=33 format=3 uid="uid://bnqm70seeyo5c"]
 
-[ext_resource type="Script" uid="uid://r4emy6irxqk6" path="res://audio/scripts/main.gd" id="1_1p5hy"]
+[ext_resource type="Script" uid="uid://r4emy6irxqk6" path="res://scripts/main.gd" id="1_1p5hy"]
 [ext_resource type="Texture2D" uid="uid://bfkrvy6vf8au" path="res://assets/icons/menu_icons/lock/buildings.svg" id="1_trn2v"]
 [ext_resource type="Texture2D" uid="uid://dqfv77clb2or8" path="res://assets/icons/menu_icons/select/buildings-select.svg" id="1_wkp8b"]
 [ext_resource type="Texture2D" uid="uid://dh343lcei5tyj" path="res://assets/icons/menu_icons/lock/invest.svg" id="2_03owx"]
@@ -110,6 +110,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_trn2v")
 
 [node name="Control_content" type="Control" parent="VBoxContainer/panel_content" unique_id=1626691872]
 layout_mode = 1
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 20.0

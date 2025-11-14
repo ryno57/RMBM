@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dsp8bcwm6jnlq"]
 
-[ext_resource type="Script" uid="uid://7bgqd042pnq1" path="res://audio/scripts/color_blind_overlay.gd" id="1_5v6q4"]
+[ext_resource type="Script" uid="uid://7bgqd042pnq1" path="res://scripts/color_blind_overlay.gd" id="1_5v6q4"]
 [ext_resource type="Shader" uid="uid://d4f86x4u6exs" path="res://assets/shaders/DaltonismShader.gdshader" id="1_qahlf"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_5v6q4"]

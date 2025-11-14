@@ -1,6 +1,6 @@
 [gd_scene load_steps=28 format=4 uid="uid://xrnvidww8wko"]
 
-[ext_resource type="Script" uid="uid://bnddl3yy5sxf4" path="res://audio/scripts/self_creation.gd" id="1_0ifxk"]
+[ext_resource type="Script" uid="uid://bnddl3yy5sxf4" path="res://scripts/self_creation.gd" id="1_0ifxk"]
 [ext_resource type="FontFile" uid="uid://uemrovsegmsm" path="res://assets/FONT/Barlow-Regular.ttf" id="2_vu0e7"]
 
 [sub_resource type="Gradient" id="Gradient_vu0e7"]

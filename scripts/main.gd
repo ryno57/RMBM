@@ -4,8 +4,18 @@ extends Control
 @onready var button_group: ButtonGroup = $VBoxContainer/ToolsBarBG/HBoxContainer/ToolsBarContainer/buildings.button_group
 
 func _ready() -> void:
+	
 	_connect_group_buttons()
 	_select_initial_menu()
+	var timer := Timer.new()
+	timer.wait_time = 5.0
+	timer.autostart = true
+	timer.one_shot = false
+	add_child(timer)
+	timer.connect("timeout", Callable(self, "_on_timer_timeout"))
+
+func _on_timer_timeout():
+		GameLogic.next_month()
 
 func _connect_group_buttons() -> void:
 	for btn in button_group.get_buttons():

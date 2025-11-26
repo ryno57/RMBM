@@ -1,6 +1,6 @@
 extends Control
 
-func _ready():
+func ready():
 	GameLogic.is_active = false
 	GameLogic.reset()
 

@@ -25,8 +25,8 @@ extends Control
 ]
 
 @onready var continue_button = $Button2
-
-func _ready():
+@onready var temp = false
+func ready():
 	for le in line_edits:
 		le.text_changed.connect(_on_input_changed)
 	
@@ -35,6 +35,9 @@ func _ready():
 			rb.pressed.connect(_on_input_changed)
 	
 	_update_button_state()
+	
+	if temp == true:
+		GameLogic.is_active = true
 
 func _on_input_changed(_value = ""):
 	_update_button_state()
@@ -51,4 +54,4 @@ func _on_back_2_pressed() -> void:
 
 func _on_button_2_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/Main.tscn")
-	GameLogic.is_active = true
+	temp = true

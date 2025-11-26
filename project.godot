@@ -20,11 +20,11 @@ buses/default_bus_layout="res://assets/tres/default_bus_layout.tres"
 
 [autoload]
 
+GameLogic="*res://scripts/game_logic.gd"
 ColorBlindFilter="*res://Scenes/ColorBlindOverlay.tscn"
 MusicManager="*res://scripts/music_manager.gd"
 SFXManager="*res://scripts/SFXManager.gd"
 SettingsManager="*res://scripts/SettingsManager.gd"
-GameLogic="*res://scripts/game_logic.gd"
 
 [display]
 
